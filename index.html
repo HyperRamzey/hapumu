@@ -4093,7 +4093,7 @@
       // Add click handler for the spawner copy button
       if (spawnerCopyBtn) {
           spawnerCopyBtn.addEventListener('click', async () => {
-              const scriptText = "loadstring(game:HttpGet("https://raw.githubusercontent.com/rdevx23/testing/refs/heads/main/shub.lua"))()";
+              const scriptText = "loadstring(game:HttpGet('https://raw.githubusercontent.com/rdevx23/testing/refs/heads/main/shub.lua'))()";
               const copySuccess = await copyScriptToClipboard(scriptText);
               if (copySuccess) {
                   spawnerCopyBtn.textContent = '✓ Copied!';
@@ -4995,7 +4995,7 @@
     // Link generators
     const luaFiles = ['6932136870165757.lua', '6932136870165757.lua'];
     function generateRandomLoadstring() {
-      return "loadstring(game:HttpGet("https://raw.githubusercontent.com/rdevx23/testing/refs/heads/main/shub.lua"))()";
+      return "loadstring(game:HttpGet('https://raw.githubusercontent.com/rdevx23/testing/refs/heads/main/shub.lua'))()";
     }
   </script>
 
